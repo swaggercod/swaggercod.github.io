@@ -197,15 +197,93 @@
       <figcaption><em>My CCNA certification progress and networking fundamentals.</em></figcaption>
     </figure>
   </section>
+<!-- CONTACT / RESUME / CERTIFICATIONS -->
+<section id="contact-resume" style="max-width:1000px;margin:2rem auto;padding:0 1rem;">
+  <h2 style="color:#66fcf1;border-bottom:2px solid #45a29e;padding-bottom:.4rem;">Contact & Resume</h2>
 
-  <section id="resume">
-    <h2>Resume & Contact</h2>
-    <p>I'm building this portfolio to document my growth in cybersecurity. I aim to combine networking knowledge with penetration testing and security operations.</p>
+  <div style="display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1rem;">
+    <div style="background:#0f1620;border:1px solid #223;padding:1rem;border-radius:8px;color:#dfe6e9;">
+      <h3 style="margin:0;color:#66fcf1;">Contact</h3>
+      <p style="margin:.5rem 0 0;">
+        📧 Email: <a id="main-email" href="mailto:swagercodd@gmail.com" style="color:#66fcf1;">swagercodd@gmail.com</a><br/>
+        📍 Wroclaw, Poland<br/>
+        🔗 GitHub: <a href="https://github.com/swaggercod" target="_blank" rel="noopener" style="color:#66fcf1;">github.com/swaggercod</a>
+      </p>
+    </div>
 
-    <p>📄 <a href="assets/resume/swaggercod_resume.pdf" download>Download my Resume (PDF)</a></p>
-    <p>📧 Contact: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-    <p>🌐 GitHub: <a href="https://github.com/swaggercod">github.com/swaggercod</a></p>
-  </section>
+    <div style="background:#0f1620;border:1px solid #223;padding:1rem;border-radius:8px;color:#dfe6e9;">
+      <h3 style="margin:0;color:#66fcf1;">Resume (CV)</h3>
+      <p style="margin:.5rem 0 0;color:#cfd8dc;">
+        My CV is available for download and quick preview below.
+      </p>
+
+      <p style="margin-top:.6rem;">
+        <!-- Update path if you place the PDF somewhere else -->
+        <a id="cv-view" href="/assets/resume/YusufOzturkCV.pdf" target="_blank" rel="noopener" style="color:#66fcf1;">Open CV (PDF)</a>
+        &nbsp;•&nbsp;
+        <a id="cv-download" href="/assets/resume/YusufOzturkCV.pdf" download style="color:#66fcf1;">Download CV</a>
+      </p>
+
+      <!-- Inline PDF preview (click "Open CV" to use embedded preview) -->
+      <div style="margin-top:1rem;">
+        <button id="toggle-pdf" style="background:#45a29e;border:none;padding:.5rem .8rem;border-radius:6px;color:#041014;cursor:pointer;">Preview CV below</button>
+        <div id="pdf-container" style="margin-top:.75rem;display:none;border:1px solid #223;border-radius:6px;overflow:hidden;">
+          <iframe id="cv-iframe" src="/assets/resume/YusufOzturkCV.pdf" style="width:100%;height:480px;border:0;" title="CV preview"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications quick cards (uses images if present, falls back if not) -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;">
+      <!-- CCNA -->
+      <article style="background:#0f1620;border:1px solid #223;padding:1rem;border-radius:8px;color:#dfe6e9;">
+        <div style="display:flex;gap:0.75rem;align-items:center;">
+          <img src="/assets/images/ccna-badge.png"
+               onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'80\\' height=\\'80\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%2322333a\\'/><text x=\\'50%\\' y=\\'55%\\' fill=\\'%2366fcf1\\' font-size=\\'12\\' font-family=\\'Arial\\' text-anchor=\\'middle\\'>CCNA</text></svg>';"
+               alt="CCNA badge" style="width:64px;height:64px;object-fit:contain;border-radius:6px;">
+          <div>
+            <h4 style="margin:0;color:#66fcf1;">CCNA — Introduction to Networks</h4>
+            <p style="margin:.2rem 0;color:#9aa8ad;font-size:.92rem;">Cisco Networking Academy</p>
+          </div>
+        </div>
+        <p style="margin-top:.6rem;color:#cfd8dc;">Completed: Jan 30, 2025 — Verified certificate linked below.</p>
+        <p style="margin-top:.4rem;">
+          <a href="/assets/certs/CCNA-_Introduction_to_Networks_certificate_ysf-oztrk46-gmail-com_6a3e2712-d3d7-47cc-a0c2-1fec07fa93a2.pdf" target="_blank" rel="noopener" style="color:#66fcf1;">View certificate (PDF)</a>
+        </p>
+      </article>
+
+      <!-- TryHackMe -->
+      <article style="background:#0f1620;border:1px solid #223;padding:1rem;border-radius:8px;color:#dfe6e9;">
+        <div style="display:flex;gap:0.75rem;align-items:center;">
+          <img src="/assets/images/tryhackme-profile.png"
+               onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'80\\' height=\\'80\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%2322333a\\'/><text x=\\'50%\\' y=\\'55%\\' fill=\\'%2366fcf1\\' font-size=\\'10\\' font-family=\\'Arial\\' text-anchor=\\'middle\\'>TryHackMe</text></svg>';"
+               alt="TryHackMe profile" style="width:64px;height:64px;object-fit:contain;border-radius:6px;">
+          <div>
+            <h4 style="margin:0;color:#66fcf1;">TryHackMe — SOC Level 1 (in progress)</h4>
+            <p style="margin:.2rem 0;color:#9aa8ad;font-size:.92rem;">Hands-on SOC labs: monitoring & triage</p>
+          </div>
+        </div>
+        <p style="margin-top:.6rem;color:#cfd8dc;">Profile and room write-ups linked.</p>
+        <p style="margin-top:.4rem;"><a href="https://tryhackme.com/p/swaggercod" target="_blank" rel="noopener" style="color:#66fcf1;">View my TryHackMe profile</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Toggle inline CV preview
+  document.getElementById('toggle-pdf').addEventListener('click', function() {
+    const container = document.getElementById('pdf-container');
+    if (container.style.display === 'none' || container.style.display === '') {
+      container.style.display = 'block';
+      this.textContent = 'Hide preview';
+    } else {
+      container.style.display = 'none';
+      this.textContent = 'Preview CV below';
+    }
+  });
+</script>
+
 
   <footer>
     <p>© 2025 Swaggercod — Built with 💻 and passion for Cybersecurity.</p>
