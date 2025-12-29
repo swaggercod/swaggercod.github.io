@@ -94,6 +94,20 @@
             text-align: center;
             margin: 0 auto;
         }
+        /* Yeni eklenen stil - Technical Notes için sol hizalama */
+        .left-aligned-section {
+            text-align: left;
+        }
+        .left-aligned-section .section-box {
+            text-align: left;
+            max-width: 100%;
+        }
+        .left-aligned-section h3 {
+            text-align: left;
+        }
+        .left-aligned-section p {
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -178,15 +192,15 @@
         </div>
     </section>
    
-    <section id="technical-notes" class="center-section">
+    <section id="technical-notes" class="left-aligned-section">
         <h2>📘 Technical Notes & Labs (SQL Focus)</h2>
-        <div class="section-box" style="max-width: 900px; margin: 0 auto;">
+        <div class="section-box">
             <p style="color: #8b949e;">Below I'll share screenshots and write-ups from my technical diary, focusing on SQL and Data Engineering concepts.</p>
             
-            <h3 style="margin-top: 15px;">SQL Statements Reference</h3>
+            <h3>SQL Statements Reference</h3>
             <p>A quick reference of core SQL statements used in my projects:</p>
             
-            <h3 style="margin-top: 25px;">Data Engineering Project (Placeholder)</h3>
+            <h3>Data Engineering Project (Placeholder)</h3>
             <p style="font-size: 0.9em;"><strong>Topic:</strong> Creating a batch ETL pipeline using Python, Pandas, and PostgreSQL</p>
             <p style="font-size: 0.9em; color: #58a6ff;">Link to GitHub Repository for full code and documentation</p>
         </div>
@@ -197,7 +211,7 @@
         <div class="section-box" style="max-width: 900px; margin: 0 auto;">
             
             <h3>Contact</h3>
-            <ul>
+            <ul style="list-style: none; padding: 0;">
                 <li><span class="icon">📧</span> Email: <a href="mailto:swagercodd@gmail.com">swagercodd@gmail.com</a></li>
                 <li><span class="icon">📍</span> Location: Wrocław, Poland</li>
                 <li><span class="icon">🔗</span> GitHub: <a href="https://github.com/swaggercod" target="_blank">github.com/swaggercod</a></li>
